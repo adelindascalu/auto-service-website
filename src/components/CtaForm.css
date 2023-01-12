@@ -1,0 +1,87 @@
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.section-cta .heading-secondary {
+  color: #fff;
+}
+
+.cta {
+  height: 75rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  padding: 6.4rem;
+  background-color: var(--tertiary-color);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/benjamin-brunner-K3cjUOMmMhc-unsplash.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cta-text-box h2 {
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 6.4rem;
+  column-gap: 4.8rem;
+  row-gap: 3.6rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-family: inherit;
+  color: var(--main-color);
+}
+
+.cta-form input {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+
+.cta-form input ~ span {
+  margin-top: 1rem;
+  color: red;
+  display: none;
+}
+
+.cta-form input:invalid ~ span {
+  display: block;
+}
+
+.cta-form input::placeholder {
+  color: var(--main-color-dark);
+}
+
+.cta-form select {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+input[type="date"]:invalid::-webkit-datetime-edit {
+  color: var(--main-color-dark);
+}
+
+input[type="time"]:invalid::-webkit-datetime-edit {
+  color: var(--main-color-dark);
+}

@@ -1,0 +1,30 @@
+.section-steps {
+  background-color: #fff;
+  padding: 9.6rem 0;
+}
+
+.step-text {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 1.2rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.8rem;
+  text-align: center;
+  margin-top: 6.4rem;
+}
+
+.step-number {
+  font-size: 4.8rem;
+  color: var(--secondary-color-darker);
+}
+
+.step-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 2.4rem;
+}

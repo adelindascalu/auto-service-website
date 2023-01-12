@@ -1,0 +1,139 @@
+.footer {
+  padding-bottom: 9.6rem;
+  background-color: var(--tertiary-color);
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 4.8rem 0;
+  border-bottom: solid 1px var(--main-color-shade);
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.detail-box p {
+  line-height: 1.6;
+  font-size: 2.4rem;
+  color: var(--secondary-color);
+}
+
+.detail-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--secondary-color);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr;
+  column-gap: 3.6rem;
+  margin-top: 4.8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  list-style: none;
+  margin-top: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  transition: all 0.3s;
+}
+
+.footer-link:active,
+.footer-link:hover {
+  color: var(--secondary-color-shade);
+}
+
+.copyright {
+  margin-top: 2.4rem;
+  font-size: 1.4rem;
+  color: var(--main-color-darker);
+}
+
+.footer-heading {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+/* .newsletter-input {
+  padding: 0.8rem 1.6rem;
+  background: none;
+  border: solid 1px var(--main-color-shade);
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+} */
+
+.newsletter-col input {
+  padding: 0.8rem 1.6rem;
+  background: none;
+  border: solid 1px var(--main-color);
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.newsletter-col input::placeholder {
+  color: #4f635a;
+}
+
+.newsletter-col button {
+  margin-top: 1.2rem;
+}
+
+.newsletter-text {
+  font-size: 1.6rem;
+  color: var(--main-color-darker);
+  margin-top: 3.6rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--main-color-darker);
+}
+
+.working-hours {
+  margin-top: 2.4rem;
+}
+
+.hours {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--main-color-darker);
+}

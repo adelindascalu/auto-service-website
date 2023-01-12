@@ -1,0 +1,46 @@
+.section-services {
+  padding: 9.6rem 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3.6rem 0;
+  row-gap: 9.6rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: solid 1px var(--main-color-shade);
+}
+
+.service:hover .service-icon {
+  transform: translateY(-1rem);
+}
+
+.service-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.service-no-border {
+  border: none;
+}
+
+.service-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-bottom: 2.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.all-services {
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
