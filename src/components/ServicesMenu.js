@@ -28,7 +28,7 @@ function ServicesMenu() {
           </div>
           <div className='service service-no-border'>
             <GiCarBattery className='service-icon' />
-            <h2 className='service-heading'>Battery and Electrical Repairs</h2>
+            <h2 className='service-heading'>Electrical Repairs</h2>
           </div>
           <div className='service'>
             <TbReportSearch className='service-icon' />

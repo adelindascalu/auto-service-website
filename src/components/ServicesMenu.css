@@ -19,6 +19,7 @@
 
 .service:hover .service-icon {
   transform: translateY(-1rem);
+  color: var(--secondary-color-shade);
 }
 
 .service-heading {
@@ -43,4 +44,25 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media (max-width: 58em) {
+  .service-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services .service:nth-child(3),
+  .services .service:nth-child(5) {
+    border: none;
+  }
+
+  .services .service:nth-child(4) {
+    border-left: solid 1px var(--main-color-shade);
+  }
 }

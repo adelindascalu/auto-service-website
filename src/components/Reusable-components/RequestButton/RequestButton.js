@@ -10,7 +10,7 @@ export default function RequestButton(props) {
   return (
     <div>
       <Button
-        type='btn-light'
+        type='btn-light btn-send'
         form='cta-form'
         text='Book Now'
         onClick={toggleRequest}

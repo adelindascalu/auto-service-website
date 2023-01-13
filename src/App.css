@@ -24,10 +24,11 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: var(--main-color);
+  color: var(--tertiary-color);
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }

@@ -140,24 +140,26 @@ export default function CtaForm() {
   return (
     <>
       <section className='section-cta'>
-        <div className='container cta'>
-          <h2 className='heading-secondary'>Book an appointment</h2>
-          <form id='cta-form' className='cta-form' onSubmit={handleSubmit}>
-            {inputs.map((input) => (
-              <FormInput
-                key={input.id}
-                {...input}
-                value={values[input.name]}
-                onChange={handleInputs}
-              />
-            ))}
-          </form>
-          <RequestButton
-            type='btn-light submit'
-            text='Book Now'
-            onSubmit={handleSubmit}
-            disabled={!isButtonEnabled}
-          />
+        <div className='container'>
+          <div className='cta'>
+            <h2 className='heading-secondary'>Book an appointment</h2>
+            <form id='cta-form' className='cta-form' onSubmit={handleSubmit}>
+              {inputs.map((input) => (
+                <FormInput
+                  key={input.id}
+                  {...input}
+                  value={values[input.name]}
+                  onChange={handleInputs}
+                />
+              ))}
+            </form>
+            <RequestButton
+              type='btn-light submit'
+              text='Book Now'
+              onSubmit={handleSubmit}
+              disabled={!isButtonEnabled}
+            />
+          </div>
         </div>
       </section>
     </>

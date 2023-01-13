@@ -2,6 +2,10 @@
   padding: 9.6rem 0;
 }
 
+.main-section p {
+  line-height: 1.6;
+}
+
 .reasons-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,7 +18,7 @@
 }
 
 .rc-left {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  padding: 4.8rem 6.4rem 4.8rem 6.4rem;
 }
 
 .reason-heading {
@@ -22,13 +26,17 @@
   align-items: center;
   gap: 1.2rem;
   font-size: 2.4rem;
-  margin-top: 4.8rem;
   color: var(--secondary-color);
+}
+
+.rc-left .reason:nth-child(2),
+.rc-left .reason:nth-child(3) {
+  margin-top: 3.6rem;
 }
 
 .reason-text {
   font-size: 1.6rem;
-  margin-top: 3.6rem;
+  margin-top: 1.8rem;
   line-height: 1.6;
 }
 
@@ -40,4 +48,20 @@
 
 .rc-icon {
   font-size: 4.8rem;
+}
+
+@media (max-width: 49em) {
+  .reasons-card {
+    grid-template-columns: 1fr;
+  }
+
+  .rc-right {
+    display: none;
+  }
+}
+
+@media (max-width: 30em) {
+  .rc-left {
+    padding: 3.6rem 4.8rem 3.6rem 4.8rem;
+  }
 }

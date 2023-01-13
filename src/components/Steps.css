@@ -7,7 +7,6 @@
   font-size: 2rem;
   text-align: center;
   line-height: 1.2;
-  margin-top: 1.2rem;
 }
 
 .steps {
@@ -26,5 +25,12 @@
 .step-description {
   font-size: 1.6rem;
   line-height: 1.6;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 37em) {
+  .steps {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
 }

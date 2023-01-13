@@ -11,9 +11,7 @@ function HeroSection() {
             Your car is vital to you, so we provide essential and affordable
             services to ensure you stay on the roads
           </p>
-          <div className='btn-container'>
-            <Button type='btn-light' text='Find out more' />
-          </div>
+          <Button type='btn-light' text='Find out more' />
         </div>
       </section>
     </div>

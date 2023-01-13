@@ -23,33 +23,33 @@ export default function Testimonials() {
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: false,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true,
-    //       arrows: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 592,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const [data, setData] = useState([]);
@@ -64,29 +64,31 @@ export default function Testimonials() {
 
   return (
     <>
-      <section className='container testimonials-section'>
-        <h2 className='heading-secondary'>Hear from our customers</h2>
-        <Slider {...settings}>
-          {data.map((user, index) => (
-            <div className='customer-card' key={index}>
-              <img
-                className='customer-img'
-                src={user.picture.large}
-                alt='customer'
-              />
-              <h3 className='customer-name heading-tertiary' key={index}>
-                {user.name.first} {user.name.last}
-              </h3>
-              <p className='customer-city'>{user.location.city}</p>
-              <p className='customer-text'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusamus ratione, nostrum ipsam labore eaque molestias dolorum
-                earum numquam voluptates minus.
-              </p>
-              <p className='customer-rating'>★★★★★</p>
-            </div>
-          ))}
-        </Slider>
+      <section className='testimonials-section'>
+        <div className='container'>
+          <h2 className='heading-secondary'>Hear from our customers</h2>
+          <Slider {...settings}>
+            {data.map((user, index) => (
+              <div className='customer-card' key={index}>
+                <img
+                  className='customer-img'
+                  src={user.picture.large}
+                  alt='customer'
+                />
+                <h3 className='customer-name heading-tertiary' key={index}>
+                  {user.name.first} {user.name.last}
+                </h3>
+                <p className='customer-city'>{user.location.city}</p>
+                <p className='customer-text'>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusamus ratione, nostrum ipsam labore eaque molestias
+                  dolorum earum numquam voluptates minus.
+                </p>
+                <p className='customer-rating'>★★★★★</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </section>
     </>
   );
