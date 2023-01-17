@@ -1,5 +1,13 @@
+import ServicesList from "../components/ServicesComponents/ServicesList";
+import FAQSection from "../components/HomePageComponents/FAQSection";
+
 function Services() {
-  return <h1>Services</h1>;
+  return (
+    <>
+      <ServicesList />
+      <FAQSection />
+    </>
+  );
 }
 
 export default Services;

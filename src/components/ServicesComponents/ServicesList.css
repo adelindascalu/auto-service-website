@@ -1,0 +1,46 @@
+.services-section {
+  padding: 9.6rem 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 4.8rem;
+  row-gap: 3.6rem;
+}
+
+.service-text-box {
+  padding: 0 1rem;
+}
+
+.service-title {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.service-title span {
+  transition: all 0.3s ease;
+}
+
+.service-title:hover span {
+  color: var(--secondary-color-shade);
+}
+
+@media (max-width: 49em) {
+  .service-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .service-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

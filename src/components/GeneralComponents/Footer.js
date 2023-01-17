@@ -3,11 +3,15 @@ import { GiTowTruck, GiPhone } from "react-icons/gi";
 import { RiMapPinLine } from "react-icons/ri";
 
 import { Link } from "react-router-dom";
-import Button from "./Reusable-components/Button/Button";
+import Button from "../Reusable-components/Button/Button";
 
 import "./Footer.css";
 
-function Footer() {
+export default function Footer() {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <>
       <footer className='footer'>
@@ -63,7 +67,8 @@ function Footer() {
               </ul>
 
               <p className='copyright'>
-                Copyright &copy; <span className='year'>2027</span> by AXD, Inc.
+                Copyright &copy;
+                <span className='year'>{getCurrentYear()}</span> by AXD, Inc.
                 All rights reserved.
               </p>
             </div>
@@ -130,5 +135,3 @@ function Footer() {
     </>
   );
 }
-
-export default Footer;

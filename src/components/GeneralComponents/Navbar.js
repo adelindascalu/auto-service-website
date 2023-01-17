@@ -3,7 +3,7 @@ import { IoMdClose } from "react-icons/io";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Button from "./Reusable-components/Button/Button";
+import Button from "../Reusable-components/Button/Button";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -37,13 +37,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className='main-nav-link' to='#' onClick={handleNav}>
-                Prices
-              </Link>
-            </li>
-
-            <li>
-              <Link className='main-nav-link' to='#' onClick={handleNav}>
+              <Link className='main-nav-link' to='/contact' onClick={handleNav}>
                 Contact
               </Link>
             </li>

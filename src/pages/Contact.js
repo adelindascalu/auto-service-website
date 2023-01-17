@@ -1,5 +1,13 @@
+import Contacts from "../components/ContactComponents/Contacts";
+import CtaForm from "../components/HomePageComponents/CtaForm";
+
 function Products() {
-  return <h1>Products</h1>;
+  return (
+    <>
+      <Contacts />
+      <CtaForm />
+    </>
+  );
 }
 
 export default Products;

@@ -1,5 +1,11 @@
+import AboutUs from "../components/AboutUsComponents/AboutUs";
+
 function About() {
-  return <h1>About</h1>;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 }
 
 export default About;

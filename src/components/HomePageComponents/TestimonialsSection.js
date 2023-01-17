@@ -2,8 +2,8 @@ import Slider from "react-slick";
 import React from "react";
 import { useState, useEffect } from "react";
 
-import "././Reusable-components/Slider/slick.css";
-import "././Reusable-components/Slider/slick-theme.css";
+import "../Reusable-components/Slider/slick.css";
+import "../Reusable-components/Slider/slick-theme.css";
 import "./TestimonialsSection.css";
 
 export default function Testimonials() {

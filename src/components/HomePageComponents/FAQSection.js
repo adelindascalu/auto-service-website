@@ -1,5 +1,5 @@
 import "./FAQSection.css";
-import Accordion from "./Reusable-components/Accordion/Accordion";
+import Accordion from "../Reusable-components/Accordion/Accordion";
 
 function FAQSection() {
   return (

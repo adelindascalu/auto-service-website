@@ -1,11 +1,10 @@
 import "./CtaForm.css";
-import Button from "./Reusable-components/Button/Button";
-import FormInput from "./Reusable-components/Form/FormInput";
+import FormInput from "../Reusable-components/Form/FormInput";
 import { useEffect, useState } from "react";
-import { app, db } from "./Firebase/Firebase";
+import { app, db } from "../Firebase/Firebase";
 
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import RequestButton from "./Reusable-components/RequestButton/RequestButton";
+import RequestButton from "../Reusable-components/RequestButton/RequestButton";
 
 export default function CtaForm() {
   const [values, setValues] = useState({
@@ -110,9 +109,6 @@ export default function CtaForm() {
       required: false,
     },
   ];
-
-  // const [popUp, setPopUp] = useState(false);
-  // const handlePopUp = () => setPopUp(!popUp);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
