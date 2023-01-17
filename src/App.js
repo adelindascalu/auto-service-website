@@ -7,6 +7,7 @@ import Navbar from "./components/GeneralComponents/Navbar";
 import Services from "./pages/Services";
 import Footer from "./components/GeneralComponents/Footer";
 import Contact from "./pages/Contact";
+import ScrollToTopButton from "./components/Reusable-components/BackToTopButton/BackToTopButton";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

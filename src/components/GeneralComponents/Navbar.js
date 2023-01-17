@@ -10,7 +10,7 @@ function Navbar() {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div>
+    <>
       <header className='header'>
         <Link className='logo-box' to='/'>
           <h2 className='logo'>AXD</h2>
@@ -42,9 +42,6 @@ function Navbar() {
               </Link>
             </li>
             <Button type='btn-light' text='Book Now' />
-            {/* <button className='btn-light' to='#'>
-              Book Now
-            </button> */}
           </ul>
         </nav>
 
@@ -56,7 +53,7 @@ function Navbar() {
           )}
         </button>
       </header>
-    </div>
+    </>
   );
 }
 

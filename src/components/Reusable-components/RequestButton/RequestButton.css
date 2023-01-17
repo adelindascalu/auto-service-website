@@ -45,3 +45,8 @@
 .overlay {
   background: rgba(49, 49, 49, 0.8);
 }
+
+.btn-send {
+  display: block;
+  margin: 0 auto;
+}

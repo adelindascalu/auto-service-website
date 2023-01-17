@@ -50,9 +50,9 @@ export default function Gallery() {
     <>
       <Slider {...settings}>
         <img className='gallery-item' src={image01} alt='gallery-img'></img>
-        <img src={image02} alt='gallery-img'></img>
-        <img src={image03} alt='gallery-img'></img>
-        <img src={image04} alt='gallery-img'></img>
+        <img className='gallery-item' src={image02} alt='gallery-img'></img>
+        <img className='gallery-item' src={image03} alt='gallery-img'></img>
+        <img className='gallery-item' src={image04} alt='gallery-img'></img>
       </Slider>
     </>
   );

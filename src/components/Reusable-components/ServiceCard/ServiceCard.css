@@ -2,6 +2,7 @@
   background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
 }
 
 .service-img {

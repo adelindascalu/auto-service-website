@@ -99,17 +99,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link className='footer-link' to='/'>
+                  <Link className='footer-link' to='/services'>
                     Services
                   </Link>
                 </li>
+
                 <li>
-                  <Link className='footer-link' to='/'>
-                    Prices
-                  </Link>
-                </li>
-                <li>
-                  <Link className='footer-link' to='/'>
+                  <Link className='footer-link' to='/contact'>
                     Contact
                   </Link>
                 </li>

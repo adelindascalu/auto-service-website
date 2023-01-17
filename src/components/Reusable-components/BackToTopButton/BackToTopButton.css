@@ -1,0 +1,25 @@
+.scroll-to-top-btn {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  z-index: 999;
+  font-size: 2rem;
+
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+
+  border: solid 1px var(--tertiary-color);
+  border-radius: 0.5rem;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
