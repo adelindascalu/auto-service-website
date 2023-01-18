@@ -6,7 +6,9 @@ export default function ServiceCard(props) {
   return (
     <>
       <div className='service-container'>
-        <img className='service-img' src={src} alt={alt}></img>
+        <div className='service-img-box'>
+          <img className='service-img' src={src} alt={alt}></img>
+        </div>
         <div className='service-text-box'>
           <h3 className='heading-tertiary service-title' to='/'>
             {title} <span>→</span>

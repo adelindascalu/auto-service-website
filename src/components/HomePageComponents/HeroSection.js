@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from "../Reusable-components/Button/Button";
 import "./HeroSection.css";
 
 function HeroSection() {
@@ -12,8 +11,8 @@ function HeroSection() {
             Your car is vital to you, so we provide essential and affordable
             services to ensure you stay on the roads
           </p>
-          <Link to='/about'>
-            <Button type='btn-light' text='Find out more'></Button>
+          <Link className='btn-light hero-btn' to='/about'>
+            Find out more
           </Link>
         </div>
       </section>

@@ -1,8 +1,9 @@
-/* .btn-light,
+.btn-light,
 .btn-light:link,
 .btn-light:visited {
   display: inline-block;
   background-color: var(--secondary-color);
+  color: var(--tertiary-color);
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 700;
@@ -40,4 +41,4 @@
 .btn-dark:hover,
 .btn-dark:active {
   background-color: var(--secondary-color-shade);
-} */
+}

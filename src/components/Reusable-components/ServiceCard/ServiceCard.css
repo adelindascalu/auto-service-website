@@ -5,6 +5,42 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
 }
 
+.service-text-box {
+  padding: 0 1rem;
+}
+
 .service-img {
+  height: auto;
   width: 100%;
+}
+
+.service-title {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.service-title span {
+  transition: all 0.3s ease;
+}
+
+.service-title:hover span {
+  color: var(--secondary-color-shade);
+}
+
+@media (max-width: 49em) {
+  .service-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .service-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

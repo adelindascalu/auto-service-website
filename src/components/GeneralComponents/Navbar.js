@@ -41,7 +41,9 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <Button type='btn-light' text='Book Now' />
+            <Link className='btn-light' to='/contact'>
+              Get a quote
+            </Link>
           </ul>
         </nav>
 

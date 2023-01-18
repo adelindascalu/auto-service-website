@@ -1,1 +1,5 @@
-
+@import url("./Styles/variables.css");
+@import url("./Styles/general.css");
+@import url("./Styles/button.css");
+@import url("./Styles/heading.css");
+@import url("./Styles/link.css");

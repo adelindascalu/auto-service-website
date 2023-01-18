@@ -77,6 +77,11 @@
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.logo-box:hover {
+  color: var(--secondary-color-shade);
 }
 
 .hamburger {

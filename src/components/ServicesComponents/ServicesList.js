@@ -11,7 +11,7 @@ export default function ServicesList() {
     <>
       <section className='services-section'>
         <div className='container'>
-          <h2 className='heading-secondary'>Services</h2>
+          <h2 className='heading-primary services-heading'>Services</h2>
         </div>
 
         <div className='container services-container'>
