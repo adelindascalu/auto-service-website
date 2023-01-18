@@ -41,7 +41,7 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <Link className='btn-light' to='/contact'>
+            <Link className='btn-light' to='/contact' onClick={handleNav}>
               Get a quote
             </Link>
           </ul>
