@@ -41,8 +41,8 @@ export default function Footer() {
 
           <div className='footer-container'>
             <div className='logo-col'>
-              <Link className='logo-box' to='/'>
-                <h2 className='logo'>AXD</h2>
+              <Link className='logo-box logo' to='/'>
+                AXD
               </Link>
               <div className='working-hours'>
                 <p className='hours'>Mo-Sa: 07:00 - 22:00</p>

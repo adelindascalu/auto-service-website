@@ -3,7 +3,6 @@ import { IoMdClose } from "react-icons/io";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Button from "../Reusable-components/Button/Button";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -12,8 +11,8 @@ function Navbar() {
   return (
     <>
       <header className='header'>
-        <Link className='logo-box' to='/'>
-          <h2 className='logo'>AXD</h2>
+        <Link className='logo' to='/'>
+          AXD
         </Link>
         <nav className='main-nav'>
           <ul className={nav ? "main-nav-list active" : "main-nav-list"}>
