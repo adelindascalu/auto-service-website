@@ -92,6 +92,13 @@
   font-size: 1.6rem;
 }
 
+.disabled {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+  margin-bottom: 1rem;
+}
+
 input[type="date"]:invalid::-webkit-datetime-edit {
   color: var(--main-color-dark);
 }

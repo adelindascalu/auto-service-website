@@ -55,9 +55,13 @@ export default function Testimonials() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("https://randomuser.me/api/?results=6");
-      const { results } = await res.json();
-      setData(results);
+      try {
+        const res = await fetch("https://randomuser.me/api/?results=6");
+        const { results } = await res.json();
+        setData(results);
+      } catch (err) {
+        alert("Problem loading the API. Please refresh the page.");
+      }
     };
     fetchData();
   }, []);

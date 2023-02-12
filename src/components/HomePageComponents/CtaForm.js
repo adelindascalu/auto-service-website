@@ -112,22 +112,25 @@ export default function CtaForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await addDoc(collection(db, "inputs"), {
-      ...values,
-      timestamp: serverTimestamp(),
-    });
-    setValues({
-      firstname: "",
-      surname: "",
-      email: "",
-      phone: "",
-      date: "",
-      time: "",
-      vehicle: "",
-      service: "",
-    });
+    try {
+      const res = await addDoc(collection(db, "inputs"), {
+        ...values,
+        timestamp: serverTimestamp(),
+      });
+      setValues({
+        firstname: "",
+        surname: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+        vehicle: "",
+        service: "",
+      });
+    } catch (err) {
+      alert("Problem loading API. Please refresh.");
+    }
   };
-
   const handleInputs = function (e) {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
