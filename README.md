@@ -18,7 +18,7 @@ As we usually say "Check. Repair. Maintain. Repeat".
 
 ![image](./src/assets/images/axd-service-capture.JPG)
 
-# 🛠 Built with:
+# 🛠 Built with
 
 - ReactJs
 
